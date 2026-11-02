@@ -14,19 +14,26 @@ export default function Logo({ size = 36, className = "" }: LogoProps) {
       className={className}
     >
       {/* Rounded square background */}
-      <rect x="1" y="1" width="38" height="38" rx="12" fill="#10b981" />
+      <rect
+        x="1"
+        y="1"
+        width="38"
+        height="38"
+        rx="12"
+        fill="var(--color-foreground)"
+      />
 
       {/* Letter A */}
       <path
         d="M13 27L20 13L27 27"
-        stroke="#0a0a0a"
+        stroke="var(--color-background)"
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
         d="M16 22H24"
-        stroke="#0a0a0a"
+        stroke="var(--color-background)"
         strokeWidth="2.5"
         strokeLinecap="round"
       />

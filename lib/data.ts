@@ -1,12 +1,14 @@
 import {
   LuPlane,
   LuMonitor,
-  LuCode,
   LuDatabase,
   LuWrench,
   LuNetwork,
   LuTicket,
   LuGlobe,
+  LuTarget,
+  LuTrendingUp,
+  LuRocket,
 } from "react-icons/lu";
 import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 
@@ -14,19 +16,19 @@ export const personalInfo = {
   name: "Abdullah Riaz",
   tagline: "IT · Operations · Systems",
   heroGreeting: "Hello",
-  heroSubtext: "— It's Abdullah, an IT & Systems Operator",
+  heroSubtext: "— I'm Abdullah, an IT & Systems Operator",
   email: "ariaz7556@gmail.com",
   phone: "+92 329 8625 816",
-  location: "Hafizabad, Punjab, Pakistan",
+  location: "Islamabad, Pakistan",
 };
 
 export const stats = [
-  { value: "+2", label: "Years Experience" },
-  { value: "+3", label: "Roles Worked" },
+  { value: "2 Yrs", label: "Practical Work Experience" },
+  { value: "IT", label: "Operations & Technical Support" },
 ];
 
 export const aboutText =
-  "Versatile professional with practical experience in IT operations, travel and ticketing systems, inventory management, and data handling. Experienced in working with POS and inventory systems, Sabre Interact, airline B2B portals, system operations, and basic IT support. Also completed a MERN Stack development internship, with exposure to modern web development and programming. Comfortable working with operational systems, digital records, and day-to-day technical tasks.";
+  "I have practical experience in IT operations, travel ticketing, inventory management, and data handling. My work has involved using POS and inventory systems, Sabre Interact, airline B2B portals, and providing basic technical support. I enjoy working with technology, solving day-to-day system problems, and learning how software and systems work. Currently, I am focused on improving my programming skills and exploring systems and backend development.";
 
 export const skills = [
   { name: "IT & Systems Operations", icon: LuMonitor },
@@ -37,53 +39,47 @@ export const skills = [
   { name: "Data Entry & Microsoft Excel", icon: LuDatabase },
   { name: "IT Hardware Troubleshooting", icon: LuWrench },
   { name: "Basic Network Troubleshooting", icon: LuNetwork },
-  { name: "Web Development", icon: LuCode },
-  { name: "JavaScript / MERN Stack", icon: LuCode },
 ];
 
 export const experience = [
   {
     company: "Brilliant Travel",
-    role: "Ticketing & Systems Operator",
+    role: "Ticketing & GDS Operator",
     period: "July 2026 - Present",
     points: [
-      "Processed flight reservations, PNRs, fare pricing, voids, and reissues.",
-      "Worked with Sabre Interact and GDS-based ticketing workflows.",
-      "Handled bookings through the Ethiopian Airlines B2B portal.",
-      "Managed international itineraries and routing for African sectors.",
-      "Maintained accurate system entries and daily digital records.",
+      "Worked with Sabre Interact for PNR creation, fare pricing, ticket voiding, and re-issuance.",
+      "Used airline B2B portals, including Ethiopian Airlines, Air Fast Congo, CAA, and Air Congo.",
+      "Handled international flight bookings, mainly for African routes.",
+      "Maintained booking records and daily ticketing data.",
     ],
   },
   {
-    company: "One Stop Grocery",
-    role: "IT & Systems Operator",
+    company: "One Stop",
+    role: "IT & Inventory Operations",
     period: "2025 - 2026",
     points: [
-      "Managed daily POS and inventory system entries.",
-      "Updated stock records and assisted with inventory reconciliation.",
-      "Maintained accurate digital records and system data.",
-      "Provided basic hardware and network troubleshooting.",
-      "Supported smooth day-to-day system operations.",
+      "Handled daily inventory updates and stock records through POS systems.",
+      "Checked stock information and helped maintain accurate product data.",
+      "Assisted with basic hardware, network, and system troubleshooting.",
+      "Supported daily IT and retail operations.",
     ],
   },
   {
-    company: "Ezitech Institute",
-    role: "MERN Stack Intern",
-    period: "2025 (3 Months)",
+    company: "Ezitech Software House",
+    role: "Software Development Intern",
+    period: "2 Months",
     points: [
-      "Gained practical experience with MERN Stack web development.",
-      "Worked with JavaScript and modern web development concepts.",
-      "Built and worked on web-based applications during the internship.",
-      "Practiced frontend and backend development workflows.",
+      "Worked on basic web development tasks.",
+      "Got exposure to frontend and backend technologies.",
     ],
   },
 ];
 
 export const education = [
   {
-    degree: "Matriculation",
+    degree: "Matriculation in Computer Science",
     institute: "BISE Gujranwala",
-    period: "2020 - 2022",
+    period: "Completed",
   },
 ];
 
@@ -108,7 +104,7 @@ export const contactInfo = [
   {
     icon: FiMapPin,
     label: "Location",
-    value: "Hafizabad, Punjab, Pakistan",
+    value: "Islamabad, Pakistan",
     href: null,
   },
 ];
@@ -117,5 +113,55 @@ export const navLinks = [
   { name: "About Me", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
+  { name: "Goals", href: "#goals" },
   { name: "Contact", href: "#contact" },
+];
+
+export const goalsVision =
+  "My goal is to grow as a software engineer, with a focus on backend development, systems programming, and building reliable software. I am currently exploring Rust, backend technologies, and native desktop application development.";
+
+export const careerGoal = {
+  title: "My Technical Direction",
+  icon: LuTarget,
+  description:
+    "I want to move from IT operations into software engineering. My current interests include Rust, backend development, databases, system design, and native desktop applications.",
+};
+
+export const goals = [
+  {
+    icon: LuTarget,
+    phase: "Now",
+    period: "Current Focus",
+    title: "Learning Systems Programming",
+    points: [
+      "Learning Rust and understanding memory management, ownership, and core programming concepts.",
+      "Practicing Data Structures and Algorithms to improve problem-solving skills.",
+      "Exploring Slint for building native desktop applications.",
+      "Working on small projects to apply what I learn.",
+    ],
+  },
+  {
+    icon: LuTrendingUp,
+    phase: "Next",
+    period: "Mid Term",
+    title: "Backend Development & System Design",
+    points: [
+      "Building backend applications and working with databases.",
+      "Learning API design, authentication, caching, and application architecture.",
+      "Understanding how systems handle data, concurrent tasks, and increasing workloads.",
+      "Improving code quality through practical projects and open-source work.",
+    ],
+  },
+  {
+    icon: LuRocket,
+    phase: "Future",
+    period: "Long Term",
+    title: "Software & Systems Engineering",
+    points: [
+      "Working as a professional backend or systems engineer.",
+      "Building reliable software and useful developer tools.",
+      "Contributing to open-source projects and developing my own tools.",
+      "Working towards opportunities with established global technology companies.",
+    ],
+  },
 ];

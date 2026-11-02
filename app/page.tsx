@@ -7,10 +7,11 @@ import Education from "@/components/sections/Education";
 import Languages from "@/components/sections/Languages";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
+import Goals from "@/components/sections/Goals";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen">
       <Navbar />
       <Hero />
       <About />
@@ -18,6 +19,7 @@ export default function Home() {
       <Experience />
       <Education />
       <Languages />
+      <Goals />
       <Contact />
       <Footer />
     </main>

@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative py-24 px-6 lg:px-10 bg-[#0a0a0a] border-t border-[#262626]"
+      className="relative py-24 px-6 lg:px-10 bg-background border-t border-border"
     >
       <div className="max-w-5xl mx-auto">
         <motion.div
@@ -18,13 +18,13 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="mb-14"
         >
-          <p className="text-xs tracking-[0.3em] text-[#10b981] uppercase mb-4">
-            06 — Contact
+          <p className="text-xs tracking-[0.3em] text-muted uppercase mb-4">
+            07 — Contact
           </p>
-          <h2 className="text-4xl md:text-5xl font-light text-[#f5f5f5] tracking-tight mb-4">
-            Let's Work Together
+          <h2 className="text-4xl md:text-5xl font-light text-foreground tracking-tight mb-4">
+            Let&apos;s Work Together
           </h2>
-          <p className="text-base text-[#a3a3a3] max-w-2xl">
+          <p className="text-base text-secondary max-w-2xl">
             Feel free to reach out for opportunities, collaborations, or just a
             quick hello.
           </p>
@@ -39,15 +39,15 @@ export default function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="p-6 rounded-2xl bg-[#141414] border border-[#262626] hover:border-[#10b981]/50 transition-all group"
+                className="p-6 rounded-2xl bg-surface border border-border hover:border-accent/50 transition-all group"
               >
-                <div className="w-10 h-10 rounded-xl bg-[#10b981]/10 flex items-center justify-center text-[#10b981] mb-4 group-hover:bg-[#10b981] group-hover:text-white transition-all">
+                <div className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center text-accent mb-4 group-hover:bg-accent group-hover:text-background transition-all">
                   <Icon size={18} />
                 </div>
-                <p className="text-xs text-[#737373] uppercase tracking-wide mb-1">
+                <p className="text-xs text-muted uppercase tracking-wide mb-1">
                   {item.label}
                 </p>
-                <p className="text-sm text-[#f5f5f5] font-medium break-all">
+                <p className="text-sm text-foreground font-medium break-all">
                   {item.value}
                 </p>
               </motion.div>
@@ -70,7 +70,7 @@ export default function Contact() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
           href={`mailto:${personalInfo.email}`}
-          className="group inline-flex items-center gap-4 text-2xl md:text-4xl font-light text-[#f5f5f5] hover:text-[#10b981] transition-colors"
+          className="group inline-flex items-center gap-4 text-2xl md:text-4xl font-light text-foreground hover:text-accent transition-colors"
         >
           {personalInfo.email}
           <FiArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
