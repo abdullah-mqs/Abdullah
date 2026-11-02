@@ -84,7 +84,7 @@ export const education = [
 ];
 
 export const languages = [
-  { name: "English", level: "Professional" },
+  { name: "English", level: "Normal" },
   { name: "Urdu", level: "Native" },
 ];
 

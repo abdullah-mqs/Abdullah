@@ -37,7 +37,6 @@ Black & white minimalism, Vercel-inspired design, and Geist font — because sim
 ```bash
 # 1. Clone the repo
 git clone https://github.com/abdullah-mqs/Abdullah.git
-cd portfolio
 
 # 2. Install dependencies
 pnpm install
